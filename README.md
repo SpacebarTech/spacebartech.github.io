@@ -21,6 +21,8 @@ The JETS Technologies, LLC. company handbook
 - [ ] Caching data on the frontend with Vuex and IndexDB
 - [ ] Making API calls from the frontend
   - [ ] Making branch calls to Firebase and SQL in a single API call
+- [ ] Objection
+  - [ ] How to relationMappings???
   
 
 ### Design
@@ -30,10 +32,45 @@ The JETS Technologies, LLC. company handbook
 
 ### Process
 
+- [ ] Forms of communication
+- [ ] Contributing docs
+- [ ] NodeJS project commands
+  - [ ] Using `builder` and `builder-init` by FormidableLabs
+  - [ ] List of company `builder` archetypes
+    - [ ] Frontend (Vue, etc.)
+    - [ ] API (Express, etc.)
+    - [ ] Library
+    - [ ] Test (API, Library)
+    - [ ] Lint (JS)
+    - [ ] Lint (TS)
+    - [ ] tsc build
+    - [ ] barrel
+    - [ ] coverage (report, serve)
+- [ ] Git-Fu
+- [ ] Testing
+  - [ ] Service testing
+  - [ ] Integration testing
+  - [ ] e2e testing
+  - [ ] Auth&Auth testing (authentication & authorization)
+  - [ ] Configuration
 - [ ] Process Styleguide (why we choose to do x or y instead of z)
   - [ ] How we store TZ data in dates with Postgres
   - [ ] table_name.id === working with Firebase
   - [ ] table_name.table_name_key === working with SQL
     - Postgres table names are always plural
 - [ ] How to publish to the @jetstech npm scope
+  - [ ] `.npmrc` setup
+- [ ] Node versioning with NVM
 - [ ] How to code review
+- [ ] Becoming a Trelloist
+- [ ] Containers
+  - [ ] Docker
+  - [ ] Compose
+  - [ ] K8s
+
+### Docs
+
+- [ ] Technology used
+- [ ] Big data
+  - [ ] Datagrip
+  - [ ] Grafana
