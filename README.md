@@ -62,13 +62,7 @@ The JETS Technologies, LLC. company handbook
     - Postgres table names are always plural
 - [ ] How to publish to the @jetstech npm scope
   - [ ] `.npmrc` setup
-- [ ] Node versioning with NVM
 - [ ] How to code review
-- [ ] Becoming a Trelloist
-- [ ] Containers
-  - [ ] Docker
-  - [ ] Compose
-  - [ ] K8s
 
 ### Docs
 
@@ -76,3 +70,9 @@ The JETS Technologies, LLC. company handbook
 - [ ] Big data
   - [ ] Datagrip
   - [ ] Grafana
+- [ ] Containers
+  - [ ] Docker
+  - [ ] Compose
+  - [ ] K8s
+- [ ] Node versioning with NVM
+- [ ] Becoming a Trelloist
