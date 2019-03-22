@@ -60,6 +60,7 @@ The JETS Technologies, LLC. company handbook
 - [ ] Git-Fu
 - [ ] Testing
   - [ ] Service testing
+    - all tests should be 100% independent from one another. If you need setup, use `beforeEach` or something
   - [ ] Integration testing
   - [ ] e2e testing
   - [ ] Auth&Auth testing (authentication & authorization)
