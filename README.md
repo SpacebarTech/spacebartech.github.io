@@ -26,6 +26,7 @@ The JETS Technologies, LLC. company handbook
 - [ ] Objection models vs. Knex migrations vs. Joi validation
   - why have 3 sources of truth?
 - [ ] Gotchas
+  - [ ] Jest caching issues
   - [ ] Knex
     - column.string() is the equivalent to `varchar(255)`
     - [Cheatsheet](https://devhints.io/knex)
