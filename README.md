@@ -33,6 +33,7 @@ The JETS Technologies, LLC. company handbook
     - If not, TS will attempt to use Bluebird's `#then()` instead of native ES6 Promise
       - `(method) Bluebird<any>.then<any>(onFulfill?: (value: any) => any, onReject?: (error: any) => any): Bluebird<any> (+1 overload)`
       - `Property '[Symbol.toStringTag]' is missing in type 'Bluebird<any>' but required in type 'Promise<any[]>'.ts(2741)`
+      - Don't use Bluebird if you genuinely don't have to; usually for FilteredCatch and NamedErrors
 
 ### Design
 
