@@ -30,6 +30,7 @@ The JETS Technologies, LLC. company handbook
   - [ ] Knex
     - column.string() is the equivalent to `varchar(255)`
     - [Cheatsheet](https://devhints.io/knex)
+    - Knex's `table.enum` creates a `CONSTRAINT`, not an `ENUM`.
   - [ ] Using `Promise.all()` in migrations and seeds
     - If not, TS will attempt to use Bluebird's `#then()` instead of native ES6 Promise
       - `(method) Bluebird<any>.then<any>(onFulfill?: (value: any) => any, onReject?: (error: any) => any): Bluebird<any> (+1 overload)`
