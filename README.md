@@ -27,6 +27,7 @@ The JETS Technologies, LLC. company handbook
 - [ ] Objection models vs. Knex migrations vs. Joi validation
   - why have 3 sources of truth?
 - [ ] Gotchas
+  - [ ] Use `this` in `Model.$afterInsert` to get the newly created entity.
   - [ ] Jest caching issues
   - [ ] Knex
     - column.string() is the equivalent to `varchar(255)`
