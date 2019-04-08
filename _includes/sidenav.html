@@ -1,0 +1,43 @@
+<aside class="sidenav">
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+
+    <ul>
+      <li>Engineering
+        <ul>
+          {% for page in site.html_pages %}
+            {% if page.category == 'engineering' %}
+              <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>Design
+        <ul>
+          {% for page in site.html_pages %}
+            {% if page.category == 'design' %}
+              <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>Process
+        <ul>
+          {% for page in site.html_pages %}
+            {% if page.category == 'process' %}
+              <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>

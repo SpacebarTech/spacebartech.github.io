@@ -8,10 +8,10 @@ The JETS Technologies, LLC. company handbook
 
 - [ ] Code Styleguide
   - _"A function should do one thing and one thing only."_
-- [ ] How to create a TypeScript library
+- [x] How to create a TypeScript library
   - [ ] When to compile TS, etc.
   - [ ] Barrel pattern
-- [ ] How to create a TypeScript API
+- [x] How to create a TypeScript API
   - [ ] Cloning the template
   - [ ] Docker / Compose
   - [ ] `.env` template
@@ -19,14 +19,14 @@ The JETS Technologies, LLC. company handbook
   - [ ] Creating services
     - _"Your service defines the roadmap of steps to complete a given task." -- One Smart Boi_
 - [ ] Caching data on the frontend with Vuex and IndexDB
-- [ ] Making API calls from the frontend
+- [x] Making API calls from the frontend
   - [ ] Making branch calls to Firebase and SQL in a single API call
-- [ ] Objection
+- [x] Objection
   - [ ] How to relationMappings???
   - [ ] `insertGraph` and `upsertGraph`
 - [ ] Objection models vs. Knex migrations vs. Joi validation
   - why have 3 sources of truth?
-- [ ] Gotchas
+- [x] Gotchas
   - [ ] Use `this` in `Model.$afterInsert` to get the newly created entity.
   - [ ] Jest caching issues
   - [ ] Knex
@@ -41,8 +41,8 @@ The JETS Technologies, LLC. company handbook
 
 ### Design
 
-- [ ] Figma vs. Sketch/Abstract
-- [ ] Embracing the math and science of linear gradients
+- [x] Figma vs. Sketch/Abstract
+- [x] Embracing the math and science of linear gradients
 
 ### Process
 
