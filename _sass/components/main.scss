@@ -10,4 +10,8 @@ main {
   // lines at the individual letts.
   word-wrap: break-word;
   overflow: hidden;
+
+  ////////
+
+  padding: $padding--default !important;
 }

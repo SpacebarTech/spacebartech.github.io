@@ -2,7 +2,7 @@ aside.sidenav {
   @include poppins();
 
   border-right: 1px solid $color-primary--variant-2;
-  padding: 15px;
+  padding: $padding--default;
   height: 100vh;
   overflow-y: scroll;
 
