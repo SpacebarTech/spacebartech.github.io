@@ -1,43 +1,23 @@
 <aside class="sidenav">
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
+      <li class="home"><a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
     </ul>
 
-    <ul>
-      <li>Engineering
-        <ul>
-          {% for page in site.html_pages %}
-            {% if page.category == 'engineering' %}
-              <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-    </ul>
+    {% assign categories = 'engineering,design,process' | split: ',' %}
 
-    <ul>
-      <li>Design
-        <ul>
-          {% for page in site.html_pages %}
-            {% if page.category == 'design' %}
-              <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-    </ul>
-
-    <ul>
-      <li>Process
-        <ul>
-          {% for page in site.html_pages %}
-            {% if page.category == 'process' %}
-              <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-    </ul>
+    {% for category in categories %}
+      <ul>
+        <li class="category-title">{{ category | capitalize }}
+          <ul class="post-list">
+            {% for route in site.html_pages %}
+              {% if route.category == category %}
+                <li><a href="{{ route.url }}" class="{% if page.url == route.url %}active{% endif %}">{{ route.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
+    {% endfor %}
   </nav>
 </aside>
