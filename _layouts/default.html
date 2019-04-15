@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
     <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 
-    <title>{{ site.title }}</title>
+    {% if page.title %}
+      <title>JETS | {{ page.title }}</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
 
     <!-- https://stackoverflow.com/a/42969608 -->
     <!-- https://crbug.com/332189, https://crbug.com/167083 -->
