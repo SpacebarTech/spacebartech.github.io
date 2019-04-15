@@ -1,0 +1,13 @@
+/**
+ * Not to be confused with the `main.scss` in the
+ * `/assets/css/` folder. This file governs the `main`
+ * semantic HTML element. This file is _not_ an entrypoint.
+ */
+
+main {
+  // We don't have a mechanism to collapse the sidenav, so
+  // until we figure that out, just allow words to break
+  // lines at the individual letts.
+  word-wrap: break-word;
+  overflow: hidden;
+}
