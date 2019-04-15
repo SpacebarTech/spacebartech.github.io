@@ -5,6 +5,9 @@
 @import 'palette';
 @import 'variables';
 
+@import 'components/sidenav';
+@import 'components/main';
+
 /**
  * box-sizing explained
  * @see https://css-tricks.com/box-sizing/
@@ -20,46 +23,23 @@ html {
   box-sizing: inherit;
 }
 
+////////
+
 body, main, figure, ul, li {
   padding: 0;
   margin: 0;
 }
 
 ul { list-style: none; }
+
 a {
   text-decoration: none;
 }
 
-////////
 
 body {
-  // Make the aside and the main elements sit next to each
-  // other comfortably.
+  // Make the side nav and the main elements sit next to
+  // each other comfortably.
   display: grid;
   grid-template-columns: 300px 1fr;
-}
-
-aside {
-  @include poppins();
-
-  nav {
-    padding: 15px;
-  }
-
-  a {
-    color: $color-primary;
-    font-size: 13px;
-    margin: 8px 15px;
-    border-bottom: 1px solid transparent;
-
-    &:hover {
-      color: $color-primary--variant-2;
-      border-bottom-color: $color-primary--variant-2;
-    }
-  }
-}
-
-main {
-  word-wrap: break-word;
-  overflow: hidden;
 }
