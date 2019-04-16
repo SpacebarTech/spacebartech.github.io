@@ -15,6 +15,8 @@ main {
 
   @include poppins();
 
+  height: 100vh;
+  overflow: auto;
   padding: $padding--default !important;
   font-size: 14px;
 
