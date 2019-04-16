@@ -5,6 +5,8 @@
 @import 'palette';
 @import 'variables';
 
+@import 'theme';
+
 @import 'components/sidenav';
 @import 'components/main';
 
@@ -15,7 +17,6 @@
 
 html {
   box-sizing: $box-sizing--default;
-  background: #fefefe;
 }
 
 *,
@@ -31,7 +32,6 @@ body, main, figure, ul, li {
   margin: 0;
 }
 
-ul { list-style: none; }
 
 a {
   text-decoration: none;

@@ -13,5 +13,54 @@ main {
 
   ////////
 
+  @include poppins();
+
   padding: $padding--default !important;
+  font-size: 14px;
+
+  a {
+    color: $color-primary;
+    border-bottom: 1px dashed transparent;
+    transition: color 0.2s ease-out, border-color 0.2s ease-out;
+
+    &:hover,
+    &.active {
+      color: $color-primary--variant-2;
+      border-color: $color-primary--variant-2;
+    }
+  }
+
+  ul {
+    margin-left: $padding--default * 3;
+  }
+
+  p>code,
+  h1>code,
+  h2>code,
+  h3>code,
+  ul li>code {
+    display: inline-block;
+    background: #f6f6f6;
+    padding: 3px;
+  }
+
+  h1 {
+    @include josefin();
+
+    font-size: 36px;
+    line-height: normal;
+    font-weight: normal;
+
+    color: $color-primary;
+  }
+
+  h2 {
+    @include josefin();
+
+    font-size: 28px;
+    line-height: normal;
+    font-weight: normal;
+
+    color: $color-primary--variant-2;
+  }
 }

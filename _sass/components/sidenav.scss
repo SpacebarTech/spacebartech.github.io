@@ -1,27 +1,48 @@
 aside.sidenav {
   @include poppins();
 
-  border-right: 1px solid $color-primary--variant-2;
   padding: $padding--default;
   height: 100vh;
   overflow-y: scroll;
 
-  .category-title, a:hover, a.active {
+  .category-title,
+  a:hover,
+  a.active {
     color: $color-primary--variant-2;
   }
 
-  .post-list li, .home {
+  .post-list li,
+  .home {
     margin: 8px 15px;
   }
+
+  ul {
+    list-style: none;
+  }
+
 
   a {
     color: $color-primary;
     font-size: 13px;
     border-bottom: 1px dashed transparent;
+    position: relative;
     transition: color 0.2s ease-out, border-color 0.2s ease-out;
 
-    &:hover, &.active {
+    &:hover,
+    &.active {
       border-color: $color-primary--variant-2;
+    }
+
+    &.active::before {
+      // content: 'λ';
+      // content: '→';
+      // content: '⇒';
+      // content: '↪';
+      content: '∴';
+      // content: '∵';
+      position: absolute;
+      left: -16px;
+      top: 0;
     }
   }
 }

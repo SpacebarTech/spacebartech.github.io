@@ -4,9 +4,7 @@
       <li class="home"><a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
     </ul>
 
-    {% assign categories = 'engineering,design,process' | split: ',' %}
-
-    {% for category in categories %}
+    {% for category in site.page_categories %}
       <ul>
         <li class="category-title">{{ category | capitalize }}
           <ul class="post-list">
