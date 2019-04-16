@@ -50,6 +50,22 @@ $string: #f1fa8c;
       color: $keyword;
     }
 
+    span.nv {
+      color: $variable;
+    }
+
+    span.k {
+      color: $keyword;
+    }
+
+    span.nb {
+      color: $keyword;
+    }
+
+    span.nt {
+      color: $property;
+    }
+
     ////////
 
     // Everything below is deprecated.

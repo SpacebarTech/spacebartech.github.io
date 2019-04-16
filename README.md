@@ -1,6 +1,6 @@
 # spacebartech.github.io
-The JETS Technologies, LLC. company handbook
 
+The JETS Technologies, LLC. company handbook
 
 ## TODO: Page Topics
 
@@ -8,10 +8,10 @@ The JETS Technologies, LLC. company handbook
 
 - [ ] Code Styleguide
   - _"A function should do one thing and one thing only."_
-- [x] How to create a TypeScript library
+- [ ] How to create a TypeScript library
   - [ ] When to compile TS, etc.
   - [ ] Barrel pattern
-- [x] How to create a TypeScript API
+- [ ] How to create a TypeScript API
   - [ ] Cloning the template
   - [ ] Docker / Compose
   - [ ] `.env` template
@@ -19,14 +19,14 @@ The JETS Technologies, LLC. company handbook
   - [ ] Creating services
     - _"Your service defines the roadmap of steps to complete a given task." -- One Smart Boi_
 - [ ] Caching data on the frontend with Vuex and IndexDB
-- [x] Making API calls from the frontend
+- [ ] Making API calls from the frontend
   - [ ] Making branch calls to Firebase and SQL in a single API call
-- [x] Objection
+- [ ] Objection
   - [ ] How to relationMappings???
   - [ ] `insertGraph` and `upsertGraph`
 - [ ] Objection models vs. Knex migrations vs. Joi validation
   - why have 3 sources of truth?
-- [x] Gotchas
+- [ ] Gotchas
   - [ ] Use `this` in `Model.$afterInsert` to get the newly created entity.
   - [ ] Jest caching issues
   - [ ] Knex
@@ -41,12 +41,12 @@ The JETS Technologies, LLC. company handbook
 
 ### Design
 
-- [x] Figma vs. Sketch/Abstract
-- [x] Embracing the math and science of linear gradients
+- [ ] Figma vs. Sketch/Abstract
+- [ ] Embracing the math and science of linear gradients
 
 ### Process
 
-- [ ] Forms of communication
+- [x] Forms of communication
 - [ ] Contributing docs
 - [ ] NodeJS project commands
   - [ ] Using `builder` and `builder-init` by FormidableLabs
@@ -61,7 +61,7 @@ The JETS Technologies, LLC. company handbook
     - [ ] barrel
     - [ ] coverage (report, serve)
     - [ ] migrations (using `knex-migrate`)
-- [ ] Git-Fu
+- [x] Git-Fu
 - [ ] Testing
   - [ ] Service testing
     - all tests should be 100% independent from one another. If you need setup, use `beforeEach` or something
@@ -88,5 +88,5 @@ The JETS Technologies, LLC. company handbook
   - [ ] Docker
   - [ ] Compose
   - [ ] K8s
-- [ ] Node versioning with NVM
+- [x] Node versioning with NVM
 - [ ] Becoming a Trelloist
