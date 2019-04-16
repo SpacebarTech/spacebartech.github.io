@@ -20,6 +20,11 @@ main {
   padding: $padding--default !important;
   font-size: 14px;
 
+  p,
+  li {
+    line-height: 23px;
+  }
+
   a {
     color: $color-primary;
     border-bottom: 1px dashed transparent;
