@@ -116,3 +116,10 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 ```
+
+## Updating Node version
+
+To update Node, update the `.nvmrc` with the respective
+project. Continuous integration and Docker will pull this
+version when building. Don't use different Node versions
+between your local project and Docker, or CI.
