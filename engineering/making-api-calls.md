@@ -33,9 +33,9 @@ via `res.locals.caller`.
 Once a user request has been both authenticated and
 authorized, the controller will then proceed to the Service
 method for that route controller. **If you are creating an
-entity in the database that requires a `createdBy` field,
-retrieve the currently auth&auth'd user via
-`res.locals.caller` and do not pass any additional
+entity in the database that requires a** `createdBy`
+**field, retrieve the currently auth&auth'd user via**
+`res.locals.caller` **and do not pass any additional
 parameters that may pertain to the user making the requst.**
 If you need to relate two database entities using Objection,
 simply add the following key-value to the entity you're
