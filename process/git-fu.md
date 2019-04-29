@@ -18,26 +18,51 @@ permalink: "/process/git-fu"
 
 ## Custom `git` commands
 
-- `git log` is useful, but it displays commits in a very
-  verbose way and does not illustrate the git graph very well.
-  The solution is to add [a better git log](https://coderwall.com/p/euwpig/a-better-git-log)
-  command. Follow the instructions at the link to set up the
-  command.
-- When jumping around branches (e.g. when QA'ing someone
-  else's feature), you can sometimes forget what branch you
-  were previously working on.
-  1. To list branches that you have committed to recently
-     (oldest to most recent), try this out:
-    ```bash
-    git branch --sort=-committerdate | tac
-    ```
-  2. Now as a `git` alias:
-    ```bash
-    git config --global alias.recent "! git branch --sort=committerdate | tac"
-    ```
-    If you added the alias, use it like this: `git recent`.
-    The branches that you are probably interested in will
-    be at the bottom.
+### A better `git log`
+
+`git log` is useful, but it displays commits in a very
+verbose way and does not illustrate the git graph very well.
+The solution is to add [a better git log](https://coderwall.com/p/euwpig/a-better-git-log)
+command. Follow the instructions at the link to set up the
+command.
+
+### List recently committed-to branches
+
+When jumping around branches (e.g. when QA'ing someone
+else's feature), you can sometimes forget what branch you
+were previously working on.
+
+To list branches that you have committed to recently
+(oldest to most recent), try this out:
+
+```bash
+git branch --sort=-committerdate | tac
+```
+
+Now as a `git` alias:
+
+```bash
+git config --global alias.recent "! git branch --sort=committerdate | tac"
+```
+
+If you added the alias, use it like this: `git recent`. The
+branches that you are probably interested in will be at the
+bottom.
+
+### Delete local branches with no remotes
+
+Often times, when branches are merged from a pull request,
+local branches tend to stay behind and not get removed.
+It can cause your `git checkout` from being simple to being
+staggering, making branches hard to find. And while VSCode
+is user-friendly in that it shows latest branches near the
+top, that won't always be the case.
+
+To clean up those unneeded branches, run the following:
+
+```bash
+git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done
+```
 
 ## Changing your default editor for Git
 
