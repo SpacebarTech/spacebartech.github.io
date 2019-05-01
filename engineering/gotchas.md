@@ -16,7 +16,6 @@ date comes before your `before` date, like so:
 
 ```ts
 Model.query()
-  // The later date comes before the earlier date
   .whereBetween( columnName, [after, before] );
 ```
 
@@ -27,6 +26,7 @@ select * from public.users
 where public.users.last_login
 between '2019-04-09' and '2019-04-12';
 -- notice the earlier date comes before the later date
+-- earlier = after; later = before.
 ```
 
 ## DigitalOcean deployments
