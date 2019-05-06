@@ -43,4 +43,7 @@ body {
   // each other comfortably.
   display: grid;
   grid-template-columns: 300px 1fr;
+
+  max-width: 1080px; // ! TODO : set this to a variable
+  margin: 0 auto;
 }
