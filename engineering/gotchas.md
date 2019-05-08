@@ -14,9 +14,9 @@ yourself getting back an empty response when you should be
 getting back at least one row, make sure that your `after`
 date comes before your `before` date, like so:
 
-```ts
+```js
 Model.query()
-  .whereBetween( columnName, [after, before] );
+  .whereBetween( 'created_at', ['after_date', 'before_date'] );
 ```
 
 However, in a SQL query builder, the following is valid:
