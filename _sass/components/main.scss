@@ -45,7 +45,8 @@ main {
   h1>code,
   h2>code,
   h3>code,
-  ul li>code {
+  ul li>code,
+  ol li>code {
     display: inline-block;
     background: #f6f6f6;
     padding: 3px;
