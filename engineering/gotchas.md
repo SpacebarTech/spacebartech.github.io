@@ -40,3 +40,13 @@ all, when using Chrome. To fix this, simply open up the dev
 tools, head to the `Network` tab, and check the box labeled
 `Disable cache`. Leave this open while you navigate the
 site.
+
+If that still doesn't solve the issue, it's most likely
+because of service worker caching. There are two ways to
+reset the cache.
+
+1. Open the current window in a browser that has never
+   visited that link.
+
+2. Bump the version number in the application's
+   `manifest.json` (this is the preferred way).
