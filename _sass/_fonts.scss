@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700|Poppins:300,300i,400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,400i,700|Poppins:300,300i,400,400i,600,600i');
 
 /**
  * The most commonly used fonts at JETS are Poppins and
@@ -7,15 +7,15 @@
  * etc.)
  *
  *
+ * WORK SANS
+ *
+ * Work Sans is the most commonly used font for general
+ * text. Use for table cells, paragraphs, and subtitles.
+ *
+ *
  * POPPINS
  *
- * Poppins is the most commonly used font for general text.
- * Use for table cells, paragraphs, and subtitles.
- *
- *
- * JOSEFIN SANS
- *
- * Josefin Sans can most be most commonly associated with
+ * Poppins can most be most commonly associated with
  * headers, card titles,
  */
 
@@ -23,6 +23,6 @@
   font-family: 'Poppins';
 }
 
-@mixin josefin() {
-  font-family: 'Josefin Sans';
+@mixin worksans() {
+  font-family: 'Work Sans';
 }

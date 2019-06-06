@@ -13,7 +13,7 @@ main {
 
   ////////
 
-  @include poppins();
+  @include worksans();
 
   height: 100vh;
   overflow: auto;
@@ -22,7 +22,7 @@ main {
 
   p,
   li {
-    line-height: 23px;
+    line-height: 24px;
   }
 
   a {
@@ -53,7 +53,7 @@ main {
   }
 
   h1 {
-    @include josefin();
+    @include poppins();
 
     font-size: 36px;
     line-height: normal;
@@ -63,7 +63,7 @@ main {
   }
 
   h2 {
-    @include josefin();
+    @include poppins();
 
     font-size: 28px;
     line-height: normal;
