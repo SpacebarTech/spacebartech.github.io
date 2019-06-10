@@ -59,6 +59,8 @@ permalink: "/engineering/technology-used"
 >
 > Jest (unit testing)
 >
+> Cypress (e2e testing)
+>
 > Semaphore CI
 >
 > Supertest (integration testing)
@@ -83,12 +85,6 @@ permalink: "/engineering/technology-used"
 > CodeClimate (!)
 >
 > CouchDB (?)
->
-> Cypress (!)(?) (e2e testing)
->
-> gRPC (!)
->
-> Istio
 >
 > Kubernetes
 >
