@@ -29,6 +29,59 @@ between '2019-04-09' and '2019-04-12';
 -- earlier = after; later = before.
 ```
 
+## Add a row to a pivot table
+
+When using Objection for a `ManyToManyRelationship`, it's
+important to note that a couple things have to happen. If
+you need to relate two entities as a row of a pivot table,
+follow the example below:
+
+```ts
+class MyService extends MyRepo {
+  // Make a `create` function for inserting into the db.
+  // Assume `Entity` is some Objection Model, and
+  // `otherEntity` is a table in the database.
+  static create: (entity: Partial<Entity>) => Bluebird<Partial<Entity>> =
+    Bluebird.method(async (entity: Partial<Entity>) => {
+      // Get the Model's Knex instance for the transaction
+      const knex: Knex = Entity.knex();
+
+      // Begin a transaction, passing in `knex`.
+      return objection.transaction(knex, async(trx: objection.Transaction) => {
+        // Destructure the `pk`, separating the pk to
+        // relate from the rest of the object (as there's
+        // no column on the `entities` table for that pk;
+        // rather, it's on the pivot table). This assumes
+        // that the left table has a row `where id =
+        // 'otherEntityId'`
+        const { otherEntityId, ...ent } = entity;
+
+        // Firstly, insert the `entity` into the db. We use
+        // `insertGraph` here to insert any other relations.
+        const insertedEntity = await Entity.query()
+          .insertGraph(ent, { relate: true });
+
+        // Once we've inserted it, we want to start a
+        // related query, joining the two tables together.
+        // `#relate()` is what actually inserts the row
+        // into the pivot table, using the supplied
+        // `otherEntityId` and the `entityId` from the
+        // `insertedEntity`.
+        insertedEntity.$relatedQuery('otherEntity', trx).relate(otherEntityId);
+
+        return insertedEntity;
+      })
+    });
+}
+```
+
+If you want to return the entire relation, you can chain
+`.eager('[...]')` to the end of the `return` statement.
+
+Note the `$` in front of `relatedQuery`. Do not call
+`relatedQuery` on the `Model` itself. You _must_ call it on
+the instance.
+
 ## DigitalOcean deployments
 
 ### Caching issues
